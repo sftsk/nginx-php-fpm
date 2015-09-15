@@ -70,11 +70,11 @@ ADD ./start.sh /start.sh
 RUN chmod 755 /start.sh
 
 # Setup Volume
-VOLUME ["/usr/share/nginx/html"]
+VOLUME ["/usr/share/nginx/web"]
 
 # add test PHP file
-ADD ./index.php /usr/share/nginx/html/index.php
-RUN chown -Rf www-data.www-data /usr/share/nginx/html/
+ADD ./index.php /usr/share/nginx/web/index.php
+RUN chown -Rf www-data.www-data /usr/share/nginx/web/
 
 # Expose Ports
 EXPOSE 443
