@@ -70,7 +70,7 @@ ADD ./start.sh /start.sh
 RUN chmod 755 /start.sh
 
 # Setup Volume
-VOLUME ["/usr/share/nginx/web"]
+VOLUME ["/usr/share/nginx"]
 
 # add test PHP file
 ADD ./index.php /usr/share/nginx/web/index.php
